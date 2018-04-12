@@ -1,0 +1,22 @@
+.container {
+  padding: 0px 120px 0 120px;
+}
+.container-body {
+  margin-top: 150px;
+}
+.blog-posts {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.blog-posts div {
+  margin: 10px;
+}
+
+.blog-post-content {
+  margin-top: 50px;
+}
+.coming-soon {
+  width: 30%;
+  margin: 0 auto;
+}
