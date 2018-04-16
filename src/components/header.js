@@ -44,7 +44,6 @@ class Header extends React.Component {
     }
   }
   render() {
-    console.log(location.pathname)
     const { classes } = this.props
     const { value } = this.state
 
