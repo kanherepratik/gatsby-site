@@ -11,10 +11,7 @@ const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
       title="Cloud Thoughts"
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
+      meta={[{ name: 'viewport', content: 'width=1024' }]}
     />
     <Header />
     <div>

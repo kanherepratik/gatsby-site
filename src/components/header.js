@@ -5,6 +5,7 @@ import AppBar from 'material-ui/AppBar'
 import Typography from 'material-ui/Typography'
 import Button from 'material-ui/Button'
 import Tabs, { Tab } from 'material-ui/Tabs'
+import { withPrefix } from 'gatsby-link'
 
 const styles = {
   root: {
@@ -30,12 +31,23 @@ class Header extends React.Component {
       value: 0,
     }
   }
+
+  componentDidMount() {
+    this.checkPath()
+  }
   handleChange = (event, value) => {
     this.setState({ value })
   }
+  checkPath = () => {
+    if (location.pathname === withPrefix('/about-us')) {
+      this.setState({ value: 1 })
+    }
+  }
   render() {
+    console.log(location.pathname)
     const { classes } = this.props
     const { value } = this.state
+
     return (
       <AppBar className={`${classes.root} container`}>
         <Typography variant="title" color="inherit" className={classes.flex}>
@@ -51,7 +63,6 @@ class Header extends React.Component {
         >
           <Tab label="Home" href="/" />
           <Tab label="About Us" href="/about-us" />
-          <Tab label="Contact Us" href="/contact-us" />
         </Tabs>
       </AppBar>
     )

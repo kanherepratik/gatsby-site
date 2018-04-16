@@ -1,8 +1,8 @@
 ---
-path: "/another-one"
+path: "/Blog-2"
 date: "2017-07-12T17:12:33.962Z"
-title: "My Second Gatsby Post"
-author: "Prateek Kanhere"
+title: "Test Blog"
+author: "Aditya Risbud"
 image: "http://smithmeadows.com/wp-content/uploads/2012/04/P4250007.jpg"
 ---
 

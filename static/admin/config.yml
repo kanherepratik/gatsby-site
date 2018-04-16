@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: kanherepratik/gatsby-site #replace with your username/repo
+
+media_folder: static/assets
+publish_mode: editorial_workflow
+
+collections:
+  - name: blog
+    label: Blog
+    folder: "post"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: author, label: author }
+      - {label: "Body", name: "body", widget: "markdown"}

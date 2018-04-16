@@ -16,7 +16,10 @@
 .blog-post-content {
   margin-top: 50px;
 }
-.coming-soon {
-  width: 30%;
-  margin: 0 auto;
+.avatar-img {
+  width: 200px !important;
+  height: 200px !important;
+}
+.avatar-img img {
+  margin-bottom: 0;
 }
