@@ -14,6 +14,7 @@ const TemplateWrapper = ({ children }) => (
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
+        { name: 'viewport', content: 'width=1024' },
       ]}
     />
     <Header />
